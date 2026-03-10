@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "797ab92f-1e5c-4324-9ca6-52809f19e740",
-    "updatedAt": 1773134130380,
+    "updatedAt": 1773146062265,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -151,7 +151,7 @@
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773134046541,
+      "generatedAt": 1773145874689,
       "sessionId": "797ab92f-1e5c-4324-9ca6-52809f19e740",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -171,9 +171,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27725,
+        "chars": 28513,
         "projectContextChars": 10888,
-        "nonProjectContextChars": 16837
+        "nonProjectContextChars": 17625
       },
       "injectedWorkspaceFiles": [
         {
@@ -279,8 +279,8 @@
         ]
       },
       "tools": {
-        "listChars": 3460,
-        "schemaChars": 26081,
+        "listChars": 3953,
+        "schemaChars": 27430,
         "entries": [
           {
             "name": "read",
@@ -313,6 +313,12 @@
             "propertiesCount": 12
           },
           {
+            "name": "whatsapp_login",
+            "summaryChars": 74,
+            "schemaChars": 162,
+            "propertiesCount": 3
+          },
+          {
             "name": "browser",
             "summaryChars": 1251,
             "schemaChars": 2799,
@@ -331,8 +337,14 @@
             "propertiesCount": 37
           },
           {
+            "name": "cron",
+            "summaryChars": 2689,
+            "schemaChars": 690,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
-            "summaryChars": 195,
+            "summaryChars": 130,
             "schemaChars": 5013,
             "propertiesCount": 94
           },
@@ -341,6 +353,12 @@
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 464,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -495,11 +513,11 @@
         ]
       }
     },
-    "inputTokens": 40,
-    "outputTokens": 253,
-    "cacheRead": 95365,
-    "cacheWrite": 170,
-    "totalTokens": 95575,
+    "inputTokens": 168397,
+    "outputTokens": 4048,
+    "cacheRead": 18292,
+    "cacheWrite": 0,
+    "totalTokens": 26581,
     "totalTokensFresh": true,
     "lastAccountId": "default",
     "channel": "telegram",
