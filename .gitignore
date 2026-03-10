@@ -1,0 +1,25 @@
+# OpenClaw 备份 - .gitignore
+
+# 运行时文件（不需要备份）
+credentials/
+memory/
+logs/
+delivery-queue/
+cron/runs/
+devices/
+subagents/
+
+# Node modules & builds
+node_modules/
+*.pyc
+__pycache__/
+.gradle/
+build/
+*.apk
+
+# 系统文件
+.DS_Store
+*.swp
+
+# 临时文件
+*.tmp
