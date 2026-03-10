@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "06fbf0a9-c6ea-4595-9520-d7d4200f2319",
+      "name": "每日股市学习内容",
+      "enabled": true,
+      "createdAtMs": 1773157637215,
+      "updatedAtMs": 1773157637215,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "搜索今日股市新闻和热点，整理成学习要点发给老大"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
+      },
+      "state": {
+        "nextRunAtMs": 1773187200000,
+        "runningAtMs": 1773157675779
+      }
+    }
+  ]
+}
