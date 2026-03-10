@@ -37,11 +37,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
-## MCP Tools
+## 🚨 MCP Tools - 搜索/图片必用！
+
+**记住：搜索用 mcporter！图片分析用 mcporter！永远不用 web_fetch！**
 
 已安装 MiniMax MCP（via mcporter）：
-- `mcporter call MiniMax.web_search query="xxx"` - 搜索
-- `mcporter call MiniMax.understand_image prompt="xxx" image_source="xxx"` - 图片分析
+```
+mcporter call MiniMax.web_search query="xxx"   # 搜索（必用！永远第一个！）
+mcporter call MiniMax.understand_image prompt="xxx" image_source="xxx"  # 图片分析（必用！）
+```
 
 ## Channels
 
