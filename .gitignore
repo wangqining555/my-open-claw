@@ -8,6 +8,7 @@ delivery-queue/
 cron/runs/
 devices/
 subagents/
+agents/main/sessions/
 
 # Node modules & builds
 node_modules/
