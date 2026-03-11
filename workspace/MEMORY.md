@@ -22,3 +22,5 @@
 
 ## 重要笔记
 - 2026-03-11：修复了股市学习任务的问题，改为一次性写入文档
+- 2026-03-12 凌晨：安装了 elite-longterm-memory, skill-vetter, find-skills, self-improving-agent
+- 2026-03-12 凌晨：用 skill-vetter 协议审查了全部 6 个技能，全部通过
