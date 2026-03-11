@@ -153,6 +153,20 @@
         "env": {
           "MCPORTER_CONFIG": "/root/.mcporter/mcporter.json"
         }
+      },
+      "qveris-coding": {
+        "enabled": true,
+        "apiKey": "sk-ZoREDfzhyablLZKjKkX2nhgjVl7YfIG38UnpUAHs9jY",
+        "env": {
+          "QVERIS_API_KEY": "sk-ZoREDfzhyablLZKjKkX2nhgjVl7YfIG38UnpUAHs9jY"
+        }
+      },
+      "qveris-assistant": {
+        "enabled": true,
+        "apiKey": "sk-ZoREDfzhyablLZKjKkX2nhgjVl7YfIG38UnpUAHs9jY",
+        "env": {
+          "QVERIS_API_KEY": "sk-ZoREDfzhyablLZKjKkX2nhgjVl7YfIG38UnpUAHs9jY"
+        }
       }
     }
   },
