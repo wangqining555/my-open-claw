@@ -30,9 +30,9 @@
         "lastRunStatus": "error",
         "lastStatus": "error",
         "lastDurationMs": 3600011,
-        "lastError": "Error: cron: job execution timed out",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 1,
+        "runningAtMs": 1773187200004
       }
     }
   ]
