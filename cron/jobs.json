@@ -6,7 +6,7 @@
       "name": "每日股市学习内容",
       "enabled": true,
       "createdAtMs": 1773157637215,
-      "updatedAtMs": 1773161275790,
+      "updatedAtMs": 1773190632428,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -16,7 +16,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "按以下步骤完成每日股市学习内容：\\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天\\n2. 用mcporter搜索当天学习主题的相关知识\\n3. 创建新的飞书文档，标题为\"第X天：XXX\"\\n4. 分多次调用feishu_doc append将内容写入文档（因为内容长需要分批）\\n5. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
+        "message": "按以下步骤完成每日股市学习内容：\\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天\\n2. 用mcporter搜索当天学习主题的相关知识\\n3. 创建新的飞书文档，标题为\"第X天：XXX\"\\n4. 直接用feishu_doc write一次性写入完整内容（内容要至少800字，包含：1.计划当天内容的展开讲解 2.相关导读跳转链接 3.股市实际应用中的故事）\\n5. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
         "timeoutSeconds": 300
       },
       "delivery": {
@@ -25,14 +25,14 @@
         "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
       },
       "state": {
-        "nextRunAtMs": 1773187200000,
-        "lastRunAtMs": 1773157675779,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 3600011,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "runningAtMs": 1773187200004
+        "nextRunAtMs": 1773273600000,
+        "lastRunAtMs": 1773187200013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 141085,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     }
   ]
