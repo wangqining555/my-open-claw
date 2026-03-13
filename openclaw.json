@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.11",
-    "lastTouchedAt": "2026-03-13T07:00:34.231Z"
+    "lastTouchedAt": "2026-03-13T18:01:00.210Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-10T06:51:37.456Z",
@@ -191,14 +191,14 @@
         "source": "npm",
         "spec": "@openclaw/feishu",
         "installPath": "/root/.openclaw/extensions/feishu",
-        "version": "2026.3.11",
+        "version": "2026.3.12",
         "resolvedName": "@openclaw/feishu",
-        "resolvedVersion": "2026.3.11",
-        "resolvedSpec": "@openclaw/feishu@2026.3.11",
-        "integrity": "sha512-taayyfdoTUi0VStRKxS0uZNZXTjZaxakYS+HkpvSWfWvw/nx4ufz8YwVoIUy1yR/MeFvdsyUnpquS/YzaDmU3Q==",
-        "shasum": "d697d27a4d47cc5ce453656faa457d69b8d1ff71",
-        "resolvedAt": "2026-03-12T09:51:20.550Z",
-        "installedAt": "2026-03-12T09:51:23.518Z"
+        "resolvedVersion": "2026.3.12",
+        "resolvedSpec": "@openclaw/feishu@2026.3.12",
+        "integrity": "sha512-IoPDiOp2jyOE+pv5fJuwwkTK4aWc1NhzTrIzROkdMnxuga/H/KgRqZq8cWwZ34O7tuZBj2ln1xSDzaup+CMV3g==",
+        "shasum": "97d66db8ad949546ddf8e5e8b4b8ebe6f57beb96",
+        "resolvedAt": "2026-03-13T18:00:51.883Z",
+        "installedAt": "2026-03-13T18:01:00.150Z"
       }
     }
   }
