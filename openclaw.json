@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-12T09:51:23.589Z"
+    "lastTouchedVersion": "2026.3.11",
+    "lastTouchedAt": "2026-03-13T07:00:34.231Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-10T06:51:37.456Z",
@@ -79,6 +79,7 @@
       "compaction": {
         "mode": "safeguard"
       },
+      "thinkingDefault": "high",
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8
