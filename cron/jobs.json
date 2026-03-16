@@ -6,7 +6,7 @@
       "name": "每日股市学习内容",
       "enabled": true,
       "createdAtMs": 1773157637215,
-      "updatedAtMs": 1773532975323,
+      "updatedAtMs": 1773619365506,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -25,15 +25,14 @@
         "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
       },
       "state": {
-        "nextRunAtMs": 1773619200000,
-        "lastRunAtMs": 1773532800008,
+        "nextRunAtMs": 1773705600000,
+        "lastRunAtMs": 1773619200007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 175315,
+        "lastDurationMs": 165499,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1773619200003
+        "lastDelivered": true
       }
     }
   ]
