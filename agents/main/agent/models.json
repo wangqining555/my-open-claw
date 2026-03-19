@@ -40,6 +40,23 @@
           "maxTokens": 8192
         },
         {
+          "id": "MiniMax-M2.7",
+          "name": "MiniMax M2.7",
+          "api": "anthropic-messages",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192
+        },
+        {
           "id": "MiniMax-VL-01",
           "name": "MiniMax VL 01",
           "reasoning": false,
