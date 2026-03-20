@@ -34,6 +34,42 @@
         "consecutiveErrors": 0,
         "lastDelivered": true
       }
+    },
+    {
+      "id": "b28d5855-b05f-4636-8ea5-b8397d8269df",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "每日AI资讯播报",
+      "enabled": true,
+      "createdAtMs": 1773993745292,
+      "updatedAtMs": 1773993853609,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请完成以下任务：\n1. 用mcporter搜索今天最新的AI领域新闻（搜索\"AI 人工智能 新闻 2026年3月\"，count=10）\n2. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n3. 整理成一份简洁有条理的摘要，格式像你平时给老大汇报那样，包含：\n   - 🤖 AI领域大新闻（大厂动态、技术趋势等）\n   - 🦞 OpenClaw最新花活\n4. 通过feishu消息发送给老大（飞书ID: ou_de2d9ef449a48a06d00301c76aa9448d）\n5. 重要：消息要有人工整理的感觉，不是简单罗列标题，要有分析和总结",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
+      },
+      "state": {
+        "nextRunAtMs": 1774054800000,
+        "lastRunAtMs": 1773993796501,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57108,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
     }
   ]
 }
