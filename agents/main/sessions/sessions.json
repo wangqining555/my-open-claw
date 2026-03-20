@@ -1,22 +1,20 @@
 {
   "agent:main:main": {
     "sessionId": "6f00e19a-a95b-4348-9773-ae88c5f4cdf6",
-    "updatedAt": 1773980340841,
+    "updatedAt": 1773987629034,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "feishu",
-      "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
+      "channel": "webchat",
       "accountId": "default"
     },
-    "lastChannel": "feishu",
-    "lastTo": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
+    "lastChannel": "webchat",
     "lastAccountId": "default",
     "origin": {
       "label": "ou_de2d9ef449a48a06d00301c76aa9448d",
-      "provider": "feishu",
-      "surface": "feishu",
+      "provider": "webchat",
+      "surface": "webchat",
       "chatType": "direct",
       "from": "feishu:ou_de2d9ef449a48a06d00301c76aa9448d",
       "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
@@ -253,19 +251,13 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "minimax-portal:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "minimax-portal",
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773980321531,
+      "generatedAt": 1773987626069,
       "sessionId": "6f00e19a-a95b-4348-9773-ae88c5f4cdf6",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
-      "model": "MiniMax-M2.5",
+      "model": "MiniMax-M2.7",
       "workspaceDir": "/root/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -281,9 +273,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 32732,
+        "chars": 33716,
         "projectContextChars": 11495,
-        "nonProjectContextChars": 21237
+        "nonProjectContextChars": 22221
       },
       "injectedWorkspaceFiles": [
         {
@@ -433,8 +425,8 @@
         ]
       },
       "tools": {
-        "listChars": 3516,
-        "schemaChars": 24598,
+        "listChars": 4069,
+        "schemaChars": 27747,
         "entries": [
           {
             "name": "read",
@@ -467,6 +459,12 @@
             "propertiesCount": 12
           },
           {
+            "name": "whatsapp_login",
+            "summaryChars": 74,
+            "schemaChars": 162,
+            "propertiesCount": 3
+          },
+          {
             "name": "browser",
             "summaryChars": 1683,
             "schemaChars": 2799,
@@ -479,6 +477,18 @@
             "propertiesCount": 18
           },
           {
+            "name": "nodes",
+            "summaryChars": 122,
+            "schemaChars": 1800,
+            "propertiesCount": 37
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2689,
+            "schemaChars": 690,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
             "summaryChars": 130,
             "schemaChars": 5013,
@@ -489,6 +499,12 @@
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 464,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -649,12 +665,20 @@
         ]
       }
     },
-    "inputTokens": 3640,
-    "outputTokens": 478,
-    "cacheRead": 17775,
-    "cacheWrite": 0,
-    "totalTokens": 21330,
-    "totalTokensFresh": true
+    "inputTokens": 100,
+    "outputTokens": 35,
+    "cacheRead": 41674,
+    "cacheWrite": 747,
+    "totalTokens": 42521,
+    "totalTokensFresh": true,
+    "providerOverride": "minimax-portal",
+    "modelOverride": "MiniMax-M2.7",
+    "authProfileOverride": "minimax-portal:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "modelProvider": "minimax-portal",
+    "model": "MiniMax-M2.7",
+    "contextTokens": 200000
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
