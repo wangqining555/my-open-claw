@@ -17,9 +17,9 @@
       "provider": "feishu",
       "surface": "feishu",
       "chatType": "direct",
-      "label": "ou_de2d9ef449a48a06d00301c76aa9448d",
+      "label": "feishu:ou_de2d9ef449a48a06d00301c76aa9448d",
       "from": "feishu:ou_de2d9ef449a48a06d00301c76aa9448d",
-      "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
+      "to": "ou_de2d9ef449a48a06d00301c76aa9448d",
       "accountId": "default"
     },
     "sessionFile": "/root/.openclaw/agents/main/sessions/6441c1a0-6190-4be2-966a-f4ae2e96590c.jsonl",
@@ -1828,8 +1828,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773993796795,
-      "sessionId": "7080f26c-4b55-48f9-af5b-abb467294434",
+      "generatedAt": 1774054800080,
+      "sessionId": "b1900c03-896a-4cab-b5ec-b94209f591f4",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.5",
@@ -2217,9 +2217,9 @@
       }
     },
     "contextTokens": 200000,
-    "inputTokens": 16144,
-    "outputTokens": 1176,
-    "totalTokens": 27033,
+    "inputTokens": 16490,
+    "outputTokens": 1256,
+    "totalTokens": 27262,
     "totalTokensFresh": true,
     "cacheRead": 37030,
     "cacheWrite": 18792
@@ -3611,8 +3611,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773993796795,
-      "sessionId": "7080f26c-4b55-48f9-af5b-abb467294434",
+      "generatedAt": 1774054800080,
+      "sessionId": "b1900c03-896a-4cab-b5ec-b94209f591f4",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.5",
@@ -4000,9 +4000,9 @@
       }
     },
     "contextTokens": 200000,
-    "inputTokens": 16144,
-    "outputTokens": 1176,
-    "totalTokens": 27033,
+    "inputTokens": 16490,
+    "outputTokens": 1256,
+    "totalTokens": 27262,
     "totalTokensFresh": true,
     "cacheRead": 37030,
     "cacheWrite": 18792
