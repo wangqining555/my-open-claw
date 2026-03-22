@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "be5a754d-ba44-4106-8035-1e7d3da45a08",
-    "updatedAt": 1774147758115,
+    "updatedAt": 1774154954305,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -14,12 +14,12 @@
     "lastTo": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
     "lastAccountId": "default",
     "origin": {
-      "label": "feishu:ou_de2d9ef449a48a06d00301c76aa9448d",
+      "label": "ou_de2d9ef449a48a06d00301c76aa9448d",
       "provider": "feishu",
       "surface": "feishu",
       "chatType": "direct",
       "from": "feishu:ou_de2d9ef449a48a06d00301c76aa9448d",
-      "to": "ou_de2d9ef449a48a06d00301c76aa9448d",
+      "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d",
       "accountId": "default"
     },
     "sessionFile": "/root/.openclaw/agents/main/sessions/be5a754d-ba44-4106-8035-1e7d3da45a08.jsonl",
@@ -261,7 +261,7 @@
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774147745698,
+      "generatedAt": 1774154947599,
       "sessionId": "be5a754d-ba44-4106-8035-1e7d3da45a08",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -281,9 +281,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 32070,
+        "chars": 32732,
         "projectContextChars": 11495,
-        "nonProjectContextChars": 20575
+        "nonProjectContextChars": 21237
       },
       "injectedWorkspaceFiles": [
         {
@@ -649,11 +649,11 @@
         ]
       }
     },
-    "inputTokens": 85,
-    "outputTokens": 77,
-    "cacheRead": 31349,
-    "cacheWrite": 733,
-    "totalTokens": 32167,
+    "inputTokens": 15069,
+    "outputTokens": 116,
+    "cacheRead": 17775,
+    "cacheWrite": 0,
+    "totalTokens": 32759,
     "totalTokensFresh": true,
     "channel": "feishu"
   },
