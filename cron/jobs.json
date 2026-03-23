@@ -16,7 +16,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "按以下步骤完成每日股市学习内容：\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天\n2. 用mcporter搜索当天学习主题的相关知识\n3. 创建新的飞书文档（用feishu_doc create，标题为\"第X天：XXX\"）\n4. 用feishu_doc write一次性写入完整内容（内容要至少800字，包含：1.计划当天内容的展开讲解 2.相关导读跳转链接 3.股市实际应用中的故事）\n5. 重要：用feishu_doc read读取刚创建的文档，检查block_count是否大于5，如果block_count<=5说明文档为空，立即用feishu_doc write重新写入内容\n6. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
+        "message": "按以下步骤完成每日股市学习内容：\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天和学习主题\n2. 用mcporter搜索当天学习主题的相关知识（可以搜索多个角度）\n3. 创建新的飞书文档（用feishu_doc create，标题为\"第X天：XXX\"）\n4. 用feishu_doc write一次性写入完整内容，要求：\n   - 📖 阅读时间10-30分钟的长文\n   - 📊 图文并茂：由简入繁，能用表格/对比/结构化表达的就不用大段文字\n   - 📚 有理有据：展开讲透每个知识点，给出数据/案例/故事\n   - 内容必须包含：\n     ① 1-2个真实股市故事/案例开篇\n     ② 概念解释（简单到复杂）\n     ③ 核心知识点展开（至少3个维度的详细讲解）\n     ④ 具体操作方案/配置建议\n     ⑤ 常见误区/避坑指南\n     ⑥ 今日学习任务（3个具体可执行的检查项）\n   - 5. 重要：用feishu_doc read读取刚创建的文档，检查block_count是否大于10，如果block_count<=10说明内容太短，立即用feishu_doc write重新写入更详细的内容\n   - 6. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
         "timeoutSeconds": 300
       },
       "delivery": {
