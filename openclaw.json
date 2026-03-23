@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-22T18:01:14.002Z"
+    "lastTouchedVersion": "2026.3.22",
+    "lastTouchedAt": "2026-03-23T18:01:17.769Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-10T06:51:37.456Z",
@@ -193,6 +193,9 @@
       },
       "feishu": {
         "enabled": true
+      },
+      "minimax": {
+        "enabled": true
       }
     },
     "installs": {
@@ -206,8 +209,8 @@
         "resolvedSpec": "@openclaw/feishu@2026.3.13",
         "integrity": "sha512-D5vPkgGZ9lfCQnDFlGrQN6NCSUYRgYW9k7amW3qlm9zBI4Sp+alRZVqLZ4yZ2eCXHjw9RVp/L75wjJ7NBQyfEw==",
         "shasum": "39128ff918f8d3387331818cbe3f8b24a82e4c0d",
-        "resolvedAt": "2026-03-22T18:01:04.697Z",
-        "installedAt": "2026-03-22T18:01:13.921Z"
+        "resolvedAt": "2026-03-23T18:00:59.597Z",
+        "installedAt": "2026-03-23T18:01:07.709Z"
       }
     }
   }
