@@ -6,7 +6,7 @@
       "name": "每日股市学习内容",
       "enabled": true,
       "createdAtMs": 1773157637215,
-      "updatedAtMs": 1774310700021,
+      "updatedAtMs": 1774319706384,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -26,14 +26,14 @@
       },
       "state": {
         "nextRunAtMs": 1774396800000,
-        "lastRunAtMs": 1774310400005,
+        "lastRunAtMs": 1774319523594,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 300016,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "cron: job execution timed out",
-        "lastErrorReason": "timeout"
+        "lastDurationMs": 182790,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 2,
+        "lastError": "⚠️ ✉️ Message failed",
+        "lastDelivered": true
       }
     },
     {
