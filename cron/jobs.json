@@ -43,7 +43,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1774314300030,
+      "updatedAtMs": 1774400700013,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -62,15 +62,15 @@
         "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
       },
       "state": {
-        "nextRunAtMs": 1774400400000,
-        "lastRunAtMs": 1774314000003,
+        "nextRunAtMs": 1774486800000,
+        "lastRunAtMs": 1774400400003,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 300027,
+        "lastDurationMs": 300010,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
+        "consecutiveErrors": 2,
         "lastErrorReason": "timeout",
-        "runningAtMs": 1774400400001
+        "lastError": "cron: job execution timed out"
       }
     }
   ]
