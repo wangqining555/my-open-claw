@@ -32,8 +32,8 @@
         "lastDurationMs": 300033,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 3,
-        "lastError": "cron: job execution timed out",
-        "lastErrorReason": "timeout"
+        "lastErrorReason": "timeout",
+        "runningAtMs": 1774483200002
       }
     },
     {
