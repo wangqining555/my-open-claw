@@ -32,8 +32,8 @@
         "lastDurationMs": 270847,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 4,
-        "lastError": "⚠️ ✉️ Message failed",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1774569600003
       }
     },
     {
