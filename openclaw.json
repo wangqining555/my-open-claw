@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-28T18:01:32.845Z"
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-03-30T18:01:34.704Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-10T06:51:37.456Z",
@@ -91,7 +91,13 @@
       "appId": "cli_a92aff4fbdb89ced",
       "appSecret": "mp875D5DZIlUHMyrrTHxOdTUfsO7rotb",
       "domain": "feishu",
-      "groupPolicy": "open"
+      "groupPolicy": "open",
+      "connectionMode": "websocket",
+      "webhookPath": "/feishu/events",
+      "dmPolicy": "pairing",
+      "reactionNotifications": "own",
+      "typingIndicator": true,
+      "resolveSenderNames": true
     }
   },
   "gateway": {
@@ -152,16 +158,20 @@
         "enabled": true
       },
       "telegram": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "whatsapp": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "feishu": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "minimax": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       }
     },
     "installs": {
@@ -175,8 +185,8 @@
         "resolvedSpec": "@openclaw/feishu@2026.3.13",
         "integrity": "sha512-D5vPkgGZ9lfCQnDFlGrQN6NCSUYRgYW9k7amW3qlm9zBI4Sp+alRZVqLZ4yZ2eCXHjw9RVp/L75wjJ7NBQyfEw==",
         "shasum": "39128ff918f8d3387331818cbe3f8b24a82e4c0d",
-        "resolvedAt": "2026-03-28T18:01:23.926Z",
-        "installedAt": "2026-03-28T18:01:32.776Z"
+        "resolvedAt": "2026-03-30T18:01:25.476Z",
+        "installedAt": "2026-03-30T18:01:34.631Z"
       }
     }
   }
