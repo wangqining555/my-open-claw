@@ -43,7 +43,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1774832636098,
+      "updatedAtMs": 1774918972592,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -62,15 +62,14 @@
         "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
       },
       "state": {
-        "nextRunAtMs": 1774918800000,
-        "lastRunAtMs": 1774832400004,
+        "nextRunAtMs": 1775005200000,
+        "lastRunAtMs": 1774918800005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 236094,
+        "lastDurationMs": 172587,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1774918800002
+        "lastDelivered": true
       }
     }
   ]
