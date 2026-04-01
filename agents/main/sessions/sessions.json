@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
-    "updatedAt": 1775030031078,
+    "updatedAt": 1775030531510,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -362,14 +362,14 @@
       ],
       "version": 0
     },
-    "status": "running",
+    "status": "done",
     "startedAt": 1775030031041,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775030001362,
+      "generatedAt": 1775030031010,
       "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -787,13 +787,15 @@
         ]
       }
     },
-    "inputTokens": 105,
-    "outputTokens": 106,
-    "cacheRead": 0,
-    "cacheWrite": 21172,
+    "inputTokens": 127315,
+    "outputTokens": 18855,
+    "cacheRead": 21117,
+    "cacheWrite": 0,
     "estimatedCostUsd": 0,
-    "totalTokens": 21277,
-    "totalTokensFresh": true
+    "totalTokens": 41958,
+    "totalTokensFresh": true,
+    "endedAt": 1775030531472,
+    "runtimeMs": 500431
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
