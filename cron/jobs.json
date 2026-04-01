@@ -21,8 +21,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu",
-        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
+        "channel": "telegram",
+        "to": "user:5889732065"
       },
       "state": {
         "nextRunAtMs": 1775088000000,
@@ -57,8 +57,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu",
-        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
+        "channel": "telegram",
+        "to": "user:5889732065"
       },
       "state": {
         "nextRunAtMs": 1775091600000,
