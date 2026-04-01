@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
-    "updatedAt": 1775030531510,
+    "updatedAt": 1775037580719,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -9,13 +9,19 @@
     "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "telegram",
+      "to": "telegram:5889732065",
+      "accountId": "default"
     },
-    "lastChannel": "webchat",
+    "lastChannel": "telegram",
     "origin": {
-      "provider": "webchat",
-      "surface": "webchat",
-      "chatType": "direct"
+      "provider": "telegram",
+      "surface": "telegram",
+      "chatType": "direct",
+      "label": "What Oh (@oontme) id:5889732065",
+      "from": "telegram:5889732065",
+      "to": "telegram:5889732065",
+      "accountId": "default"
     },
     "sessionFile": "/root/.openclaw/agents/main/sessions/f1629a6b-6915-46a4-bbc6-bd9855afe11a.jsonl",
     "compactionCount": 0,
@@ -363,13 +369,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775030031041,
+    "startedAt": 1775037526571,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775030031010,
+      "generatedAt": 1775037526519,
       "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -389,9 +395,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 33825,
+        "chars": 32967,
         "projectContextChars": 11495,
-        "nonProjectContextChars": 22330
+        "nonProjectContextChars": 21472
       },
       "injectedWorkspaceFiles": [
         {
@@ -541,8 +547,8 @@
         ]
       },
       "tools": {
-        "listChars": 4147,
-        "schemaChars": 31414,
+        "listChars": 3594,
+        "schemaChars": 29382,
         "entries": [
           {
             "name": "read",
@@ -575,34 +581,16 @@
             "propertiesCount": 12
           },
           {
-            "name": "whatsapp_login",
-            "summaryChars": 74,
-            "schemaChars": 162,
-            "propertiesCount": 3
-          },
-          {
             "name": "canvas",
             "summaryChars": 106,
             "schemaChars": 661,
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
-            "summaryChars": 237,
-            "schemaChars": 5779,
-            "propertiesCount": 107
+            "summaryChars": 330,
+            "schemaChars": 6896,
+            "propertiesCount": 109
           },
           {
             "name": "tts",
@@ -615,12 +603,6 @@
             "summaryChars": 435,
             "schemaChars": 1195,
             "propertiesCount": 10
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -787,15 +769,17 @@
         ]
       }
     },
-    "inputTokens": 127315,
-    "outputTokens": 18855,
-    "cacheRead": 21117,
+    "inputTokens": 159242,
+    "outputTokens": 834,
+    "cacheRead": 19150,
     "cacheWrite": 0,
     "estimatedCostUsd": 0,
-    "totalTokens": 41958,
+    "totalTokens": 44601,
     "totalTokensFresh": true,
-    "endedAt": 1775030531472,
-    "runtimeMs": 500431
+    "lastTo": "telegram:5889732065",
+    "lastAccountId": "default",
+    "endedAt": 1775037580686,
+    "runtimeMs": 54115
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
