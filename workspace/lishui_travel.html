@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丽水三天两夜自驾游攻略 · 清明假期 2026.04.04-04.06</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: #f5f0eb; color: #333; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+  /* 封面 */
+  .hero { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #2d5016 0%, #5a8a2e 50%, #8fc54a 100%); color: white; border-radius: 20px; margin-bottom: 30px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="15" fill="rgba(255,255,255,0.05)"/><circle cx="80" cy="60" r="25" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="80" r="10" fill="rgba(255,255,255,0.03)"/></svg>'); }
+  .hero h1 { font-size: 2.2em; margin-bottom: 10px; position: relative; }
+  .hero .subtitle { font-size: 1.1em; opacity: 0.9; position: relative; margin-bottom: 20px; }
+  .hero .tags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; position: relative; }
+  .hero .tag { background: rgba(255,255,255,0.25); border-radius: 20px; padding: 5px 16px; font-size: 0.9em; backdrop-filter: blur(5px); }
+
+  /* 导航摘要 */
+  .trip-summary { background: white; border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .trip-summary h2 { font-size: 1.2em; color: #2d5016; margin-bottom: 16px; border-left: 4px solid #8fc54a; padding-left: 12px; }
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .summary-item { background: #f8faf4; border-radius: 12px; padding: 14px; }
+  .summary-item .label { font-size: 0.8em; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .summary-item .value { font-size: 1em; font-weight: 600; color: #333; }
+
+  /* 行程卡片 */
+  .day-card { background: white; border-radius: 16px; margin-bottom: 24px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .day-header { padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
+  .day-header .day-badge { background: linear-gradient(135deg, #2d5016, #5a8a2e); color: white; border-radius: 50%; width: 56px; height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; }
+  .day-header .day-badge .day-num { font-size: 1.4em; font-weight: 800; line-height: 1; }
+  .day-header .day-badge .day-label { font-size: 0.6em; opacity: 0.8; }
+  .day-header .day-info h3 { font-size: 1.3em; color: #1a1a1a; }
+  .day-header .day-info .date { font-size: 0.85em; color: #888; margin-top: 2px; }
+  .day-header .day-theme { margin-left: auto; background: #e8f5d8; color: #2d5016; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+
+  .timeline { padding: 0 24px 24px; }
+  .timeline-item { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px dashed #eee; }
+  .timeline-item:last-child { border-bottom: none; }
+  .time-col { width: 60px; flex-shrink: 0; text-align: center; }
+  .time-col .time { font-weight: 700; color: #5a8a2e; font-size: 0.95em; }
+  .time-col .icon { font-size: 1.4em; margin-top: 4px; }
+  .content-col { flex: 1; }
+  .content-col .item-title { font-weight: 700; font-size: 1.05em; color: #222; margin-bottom: 4px; }
+  .content-col .item-desc { font-size: 0.88em; color: #666; margin-bottom: 6px; }
+  .content-col .item-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag-pill { background: #f0f0f0; color: #555; border-radius: 8px; padding: 2px 10px; font-size: 0.78em; }
+  .tag-pill.highlight { background: #fff3cd; color: #856404; }
+  .tag-pill.green { background: #d4edda; color: #155724; }
+  .tag-pill.blue { background: #d1ecf1; color: #0c5460; }
+
+  /* 住宿卡片 */
+  .hotel-card { background: linear-gradient(135deg, #fff9f0, #fff); border: 2px solid #f0d9b5; border-radius: 16px; padding: 20px; margin: 16px 24px 24px; }
+  .hotel-card .hotel-label { font-size: 0.75em; color: #b8860b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .hotel-card .hotel-name { font-size: 1.15em; font-weight: 700; color: #333; margin-bottom: 4px; }
+  .hotel-card .hotel-addr { font-size: 0.85em; color: #888; }
+  .hotel-card .hotel-note { margin-top: 10px; font-size: 0.85em; color: #666; background: #fffbf0; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #f0d9b5; }
+
+  /* 停车吃饭 */
+  .info-box { background: #f8faf4; border-radius: 12px; padding: 14px 18px; margin: 10px 0; border-left: 3px solid #8fc54a; }
+  .info-box.orange { background: #fff8f0; border-left-color: #f0a500; }
+  .info-box.blue { background: #f0f7ff; border-left-color: #4a9eff; }
+  .info-box .info-title { font-weight: 700; font-size: 0.9em; margin-bottom: 4px; }
+  .info-box .info-text { font-size: 0.85em; color: #555; }
+
+  /* 费用表 */
+  .cost-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  .cost-table th { background: #2d5016; color: white; padding: 10px 14px; text-align: left; }
+  .cost-table td { padding: 9px 14px; border-bottom: 1px solid #eee; }
+  .cost-table tr:nth-child(even) td { background: #f9faf5; }
+  .cost-table .total { font-weight: 700; color: #2d5016; font-size: 1.1em; }
+
+  /* 底部tips */
+  .tips { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .tips h2 { font-size: 1.2em; color: #2d5016; margin-bottom: 16px; border-left: 4px solid #8fc54a; padding-left: 12px; }
+  .tips ul { padding-left: 20px; }
+  .tips li { margin-bottom: 10px; color: #555; font-size: 0.9em; }
+  .tips li strong { color: #333; }
+
+  /* 路线图 */
+  .route-map { background: linear-gradient(135deg, #e8f5d8, #f0f7ff); border-radius: 16px; padding: 24px; margin: 24px 0; text-align: center; }
+  .route-map .route-line { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+  .route-map .city { background: white; border-radius: 12px; padding: 10px 20px; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .route-map .city.start { background: #2d5016; color: white; }
+  .route-map .city.end { background: #1a4a8a; color: white; }
+  .route-map .city.mid { background: white; color: #2d5016; }
+  .route-map .arrow { font-size: 1.5em; color: #8fc54a; padding: 0 8px; }
+
+  @media (max-width: 600px) {
+    .summary-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.6em; }
+    .day-header { flex-wrap: wrap; }
+    .route-map .route-line { flex-direction: column; }
+    .route-map .arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- 封面 -->
+<div class="hero">
+  <h1>🏔️ 丽水三天两夜自驾游攻略</h1>
+  <div class="subtitle">清明假期 · 2026年4月4日 — 4月6日</div>
+  <div class="tags">
+    <span class="tag">🚗 杭州余杭出发</span>
+    <span class="tag">🏨 2晚住宿</span>
+    <span class="tag">📸 古村 · 梯田 · 仙都</span>
+    <span class="tag">☁️ 春季好时光</span>
+  </div>
+</div>
+
+<!-- 行程概览 -->
+<div class="trip-summary">
+  <h2>📋 行程概览</h2>
+  <div class="summary-grid">
+    <div class="summary-item">
+      <div class="label">出发地</div>
+      <div class="value">杭州 · 余杭区</div>
+    </div>
+    <div class="summary-item">
+      <div class="label">目的地</div>
+      <div class="value">浙江丽水（缙云 → 云和）</div>
+    </div>
+    <div class="summary-item">
+      <div class="label">旅行天数</div>
+      <div class="value">3天2夜（4/4 · 4/5 · 4/6）</div>
+    </div>
+    <div class="summary-item">
+      <div class="label">出行方式</div>
+      <div class="value">自驾 · 全程约 500km</div>
+    </div>
+    <div class="summary-item">
+      <div class="label">住宿①</div>
+      <div class="value">艾克酒店（缙云）4/3晚-4/5早</div>
+    </div>
+    <div class="summary-item">
+      <div class="label">住宿②</div>
+      <div class="value">观云居民宿（云和）4/5晚-4/6早</div>
+    </div>
+  </div>
+</div>
+
+<!-- 路线图 -->
+<div class="route-map">
+  <div style="font-weight:700;margin-bottom:14px;color:#2d5016;font-size:1.1em;">🚗 自驾路线示意</div>
+  <div class="route-line">
+    <div class="city start">杭州余杭</div>
+    <div class="arrow">➜</div>
+    <div class="city mid">缙云仙都<br><small style="font-weight:400;font-size:0.8em;">（4/4）</small></div>
+    <div class="arrow">➜</div>
+    <div class="city mid">河阳古村<br><small style="font-weight:400;font-size:0.8em;">（4/4下午）</small></div>
+    <div class="arrow">➜</div>
+    <div class="city mid">云和梯田<br><small style="font-weight:400;font-size:0.8em;">（4/5全天）</small></div>
+    <div class="arrow">➜</div>
+    <div class="city mid">白银谷<br><small style="font-weight:400;font-size:0.8em;">（4/6上午）</small></div>
+    <div class="arrow">➜</div>
+    <div class="city end">返程杭州</div>
+  </div>
+</div>
+
+<!-- ========== DAY 1 ========== -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge">
+      <div class="day-num">D1</div>
+      <div class="day-label">DAY</div>
+    </div>
+    <div class="day-info">
+      <h3>4月4日（周六）— 缙云仙都 + 河阳古村</h3>
+      <div class="date">清明节 · 正式旅行第一天</div>
+    </div>
+    <div class="day-theme">🌿 山水诗意</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">08:00</div>
+        <div class="icon">🚗</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">杭州出发，自驾前往缙云</div>
+        <div class="item-desc">从余杭区上杭长高速，经沪昆高速→长深高速，约 180km，预计 2.5 小时车程</div>
+        <div class="item-tags">
+          <span class="tag-pill blue">高速费约 ¥120</span>
+          <span class="tag-pill">建议走沪昆+长深高速</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">10:30</div>
+        <div class="icon">🏞️</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">鼎湖峰（仙都景区）</div>
+        <div class="item-desc">《道士下山》取景地，拔地而起的孤峰直插云天，峰顶有老子庙，传说中黄帝炼丹升天之地。建议乘坐索道上山，俯瞰整个仙都景区。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">🎫 门票 ¥60 + 索道 ¥40</span>
+          <span class="tag-pill">游玩约 2.5 小时</span>
+          <span class="tag-pill highlight">必打卡</span>
+        </div>
+        <div class="info-box">
+          <div class="info-title">🅿️ 停车</div>
+          <div class="info-text">景区门口有大型停车场，停车费 ¥10/次</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">13:00</div>
+        <div class="icon">🍜</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">缙云县城午餐 — 缙云烧饼+敲肉羹</div>
+        <div class="item-desc">缙云是"中国小吃文化名城"，必吃：缙云烧饼（梅干菜肉饼）、敲肉羹、土爽面、豆腐丸。推荐店铺：爽子坦烧饼 or 人民医院附近老店。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">人均 ¥30-50</span>
+          <span class="tag-pill highlight">缙云特色</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">14:30</div>
+        <div class="icon">🏘️</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">河阳古村（AAAA景区）</div>
+        <div class="item-desc">千年古村，始建于五代末期，有"浙江第一古村"之称。保存完整的明清古建筑群，1600余间房屋，10余座古祠堂。推荐参观：答樵路（"十八间"古街）、循得桥、虚竹公祠。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">🎫 门票 ¥40</span>
+          <span class="tag-pill">游玩约 1.5-2 小时</span>
+          <span class="tag-pill highlight">古村爱好者必去</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">17:00</div>
+        <div class="icon">🛍️</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">返回酒店（艾克酒店）休息</div>
+        <div class="item-desc">从河阳古村自驾约15分钟到达缙云扬帆商业广场。傍晚可逛逛广场周边，晚餐可外卖或附近农家乐。</div>
+        <div class="item-tags">
+          <span class="tag-pill blue">缙云城区</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">18:30</div>
+        <div class="icon">🌙</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">晚餐 + 自由活动</div>
+        <div class="item-desc">推荐尝试缙云本地菜：清炖溪鱼、霉干菜扣肉、盐卤豆腐。餐后可散步至好溪边，夜晚灯光映照下的两岸步道很惬意。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">人均 ¥60-80</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== DAY 2 ========== -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge">
+      <div class="day-num">D2</div>
+      <div class="day-label">DAY</div>
+    </div>
+    <div class="day-info">
+      <h3>4月5日（周日）— 缙云 → 云和梯田</h3>
+      <div class="date">旅行第二天 · 退房后前往云和</div>
+    </div>
+    <div class="day-theme">🌾 梯田云海</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">08:00</div>
+        <div class="icon">☀️</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">酒店早餐 + 退房</div>
+        <div class="item-desc">艾克酒店退房，行李放车上，轻装出发前往云和梯田。</div>
+        <div class="item-tags">
+          <span class="tag-pill blue">约 120km，2小时车程</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">10:00</div>
+        <div class="icon">🌾</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">云和梯田 — 出发前往（AAAAA景区）</div>
+        <div class="item-desc">华东地区最大的梯田群，被誉为"中国最美梯田"之一。清明时节油菜花盛开，灌水期的梯田如镜面般倒映天空，宛如水墨画卷。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">🎫 门票 ¥80（网上提前购 ¥70）</span>
+          <span class="tag-pill highlight">必打卡</span>
+          <span class="tag-pill">建议游玩 3-4 小时</span>
+        </div>
+        <div class="info-box">
+          <div class="info-title">🅿️ 停车</div>
+          <div class="info-text">景区入口停车场 ¥10/次，景区内可开车至山顶观景台</div>
+        </div>
+        <div class="info-box orange">
+          <div class="info-title">⏰ 最佳游玩时间</div>
+          <div class="info-text">上午 9-11点光线最佳，能看到云海概率最高！梯田海拔落差大，清晨云雾缭绕极其出片。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">10:30</div>
+        <div class="icon">📸</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">云和梯田核心观景路线</div>
+        <div class="item-desc">推荐游览顺序：九曲云环（主入口）→ 观景台 → 七星墩（海拔最高观景点）→ 坑根石寨（古村）→ 白银谷。全程自驾或乘坐景区接驳车均可。</div>
+        <div class="item-tags">
+          <span class="tag-pill">九曲云环 · 观景台</span>
+          <span class="tag-pill">七星墩 · 海拔最高</span>
+          <span class="tag-pill">坑根石寨 · 古村</span>
+          <span class="tag-pill blue">白银谷 · 峡谷风光</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">13:00</div>
+        <div class="icon">🍜</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">云和梯田景区内午餐</div>
+        <div class="item-desc">景区内农家乐（坑根石寨附近）推荐：笋干烧肉、田螺塞肉、溪鱼干、糯米糕。食材新鲜，味道地道。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">人均 ¥50-70</span>
+          <span class="tag-pill">农家乐</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">14:30</div>
+        <div class="icon">🌿</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">坑根石寨（古村）</div>
+        <div class="item-desc">隐藏在梯田深处的古老村落，有800多年历史。石板路、老土屋、泉水叮咚，非常原生态。在这里喝一杯云和老茶，歇歇脚，非常舒服。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">包含在景区门票内</span>
+          <span class="tag-pill">悠闲漫步</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">16:30</div>
+        <div class="icon">🚗</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">前往云和崇头镇下垟村 — 观云居入住</div>
+        <div class="item-desc">从梯田景区驾车约20分钟到达下垟村。观云居就在村口，周围是连绵梯田和竹林，视野极佳。入住后可在民宿周边散步，看夕阳下的梯田。</div>
+        <div class="item-tags">
+          <span class="tag-pill blue">约 15km，25分钟</span>
+          <span class="tag-pill highlight">民宿就在梯田核心区</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">18:30</div>
+        <div class="icon">🌄</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">民宿晚餐 + 观星赏月</div>
+        <div class="item-desc">观云居大概率有地道农家菜，山野风味。夜晚山区光污染少，晴好天气可以看到满天繁星🌟，清明假期月色也不错。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">人均 ¥60-80</span>
+          <span class="tag-pill">山里食材新鲜</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div class="hotel-label">🏨 住宿推荐（已预订）</div>
+    <div class="hotel-name">观云居民宿</div>
+    <div class="hotel-addr">浙江省云和县崇头镇下垟村村66号</div>
+    <div class="hotel-note">📌 民宿就在梯田景区核心位置（九曲云环附近），可直接步行进入景区看日出云海！建议提前联系房东确认入住时间和停车事宜。</div>
+  </div>
+</div>
+
+<!-- ========== DAY 3 ========== -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:linear-gradient(135deg,#1a4a8a,#4a9eff);">
+      <div class="day-num">D3</div>
+      <div class="day-label">DAY</div>
+    </div>
+    <div class="day-info">
+      <h3>4月6日（周一）— 白银谷 + 返程杭州</h3>
+      <div class="date">假期末日 · 轻松返程</div>
+    </div>
+    <div class="day-theme" style="background:#e8f0ff;color:#1a4a8a;">☁️ 峡谷晨韵</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">06:00</div>
+        <div class="icon">🌅</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">早起看云海日出（强烈推荐！）</div>
+        <div class="item-desc">民宿就在梯田边！清明时节云和梯田看到云海的概率很高（据说不低于60%）。清晨5:30-6:00起床，步行至九曲云环观景台，看晨曦中的金色梯田与翻涌云海，保证此行最难忘的画面！</div>
+        <div class="item-tags">
+          <span class="tag-pill highlight">此行最值景点！</span>
+          <span class="tag-pill">看日出建议6点前到观景台</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">08:30</div>
+        <div class="icon">🥢</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">民宿早餐</div>
+        <div class="item-desc">民宿用早餐（一般包含在房费内），地瓜粥、山鸡蛋、腌菜、现磨豆浆，朴实但暖胃。</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">09:30</div>
+        <div class="icon">🥾</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">白银谷（云和梯田景区内）</div>
+        <div class="item-desc">梯田景区内一条秀丽峡谷，因古代银矿遗址而得名。峡谷两侧竹海茫茫，溪水潺潺，全程步道约2公里，轻松休闲，负氧离子爆表。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">包含在景区门票 ¥80 内</span>
+          <span class="tag-pill">游玩约 1.5 小时</span>
+          <span class="tag-pill">悠闲轻松</span>
+        </div>
+        <div class="info-box blue">
+          <div class="info-title">📍 退房后先去白银谷</div>
+          <div class="info-text">早上白银谷人少，光线穿过竹海非常美。逛完后回民宿收拾行李再出发。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">11:30</div>
+        <div class="icon">🛒</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">云和县城午餐 + 采购特产</div>
+        <div class="item-desc">退房后开车约30分钟到云和县城。推荐在云和湖畔找个农家乐午餐，顺便采购云和特产：云和雪梨、云和黑木耳、野生山茶油。</div>
+        <div class="item-tags">
+          <span class="tag-pill green">人均 ¥50</span>
+          <span class="tag-pill">特产采购</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time-col">
+        <div class="time">13:00</div>
+        <div class="icon">🚗</div>
+      </div>
+      <div class="content-col">
+        <div class="item-title">返程杭州（余杭区）</div>
+        <div class="item-desc">从云和县城出发，走长深高速→沪昆高速，约 260km，预计 3.5 小时（清明返程高峰注意拥堵，建议16:00前到家）。</div>
+        <div class="item-tags">
+          <span class="tag-pill blue">高速费约 ¥160</span>
+          <span class="tag-pill highlight">注意避开返程高峰</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 住宿总览 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:linear-gradient(135deg,#8B4513,#D2691E);">
+      <div class="day-num">🏨</div>
+      <div class="day-label">HOTEL</div>
+    </div>
+    <div class="day-info">
+      <h3>住宿安排总览</h3>
+      <div class="date">2晚 · 2家不同风格住宿体验</div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="time-col"><div class="icon">🛏️</div></div>
+      <div class="content-col">
+        <div class="item-title">4/3晚 - 4/5早 · 艾克酒店（缙云扬帆商业广场店）</div>
+        <div class="item-desc">城市商务酒店，位于缙云城区商业中心。距离仙都约20分钟车程，楼下配套齐全，购物餐饮方便。退房日期为4月5日早上（第二晚住宿结束后）。</div>
+        <div class="item-tags">
+          <span class="tag-pill">商务舒适型</span>
+          <span class="tag-pill">含早</span>
+          <span class="tag-pill">位置便利</span>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="time-col"><div class="icon">🏡</div></div>
+      <div class="content-col">
+        <div class="item-title">4/5晚 - 4/6早 · 观云居民宿（云和崇头镇下垟村66号）</div>
+        <div class="item-desc">山景民宿，就在云和梯田景区核心位置（九曲云环附近）。梯田云海就在窗外，早起看日出不用开车！原生态乡村体验，老板多为本地村民，热情好客。</div>
+        <div class="item-tags">
+          <span class="tag-pill highlight">景区核心位置</span>
+          <span class="tag-pill">梯田景观</span>
+          <span class="tag-pill">山野农家菜</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 费用预算 -->
+<div class="tips">
+  <h2>💰 费用预算参考</h2>
+  <table class="cost-table">
+    <tr><th>项目</th><th>单价/估算</th><th>备注</th></tr>
+    <tr><td>杭州-缙云高速费</td><td>约 ¥120</td><td>单程</td></tr>
+    <tr><td>缙云-云和高速费</td><td>约 ¥60</td><td>单程</td></tr>
+    <tr><td>云和-杭州高速费</td><td>约 ¥160</td><td>返程略远</td></tr>
+    <tr><td>
