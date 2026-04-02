@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
-    "updatedAt": 1775101657995,
+    "updatedAt": 1775110912463,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -15,8 +15,8 @@
     },
     "lastChannel": "telegram",
     "origin": {
-      "provider": "telegram",
-      "surface": "telegram",
+      "provider": "webchat",
+      "surface": "webchat",
       "chatType": "direct",
       "label": "What Oh (@oontme) id:5889732065",
       "from": "telegram:5889732065",
@@ -369,13 +369,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775101639448,
+    "startedAt": 1775110856220,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775101639387,
+      "generatedAt": 1775110856157,
       "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -395,9 +395,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 33312,
+        "chars": 34170,
         "projectContextChars": 11495,
-        "nonProjectContextChars": 21817
+        "nonProjectContextChars": 22675
       },
       "injectedWorkspaceFiles": [
         {
@@ -547,8 +547,8 @@
         ]
       },
       "tools": {
-        "listChars": 3659,
-        "schemaChars": 28559,
+        "listChars": 4212,
+        "schemaChars": 30380,
         "entries": [
           {
             "name": "read",
@@ -581,16 +581,34 @@
             "propertiesCount": 12
           },
           {
+            "name": "whatsapp_login",
+            "summaryChars": 74,
+            "schemaChars": 162,
+            "propertiesCount": 3
+          },
+          {
             "name": "canvas",
             "summaryChars": 106,
             "schemaChars": 661,
             "propertiesCount": 18
           },
           {
+            "name": "nodes",
+            "summaryChars": 118,
+            "schemaChars": 1589,
+            "propertiesCount": 32
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3570,
+            "schemaChars": 690,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
-            "summaryChars": 330,
-            "schemaChars": 6896,
-            "propertiesCount": 109
+            "summaryChars": 237,
+            "schemaChars": 5779,
+            "propertiesCount": 107
           },
           {
             "name": "tts",
@@ -603,6 +621,12 @@
             "summaryChars": 435,
             "schemaChars": 1195,
             "propertiesCount": 10
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 464,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -769,18 +793,18 @@
         ]
       }
     },
-    "inputTokens": 105975,
-    "outputTokens": 363,
-    "cacheRead": 19063,
+    "inputTokens": 215521,
+    "outputTokens": 946,
+    "cacheRead": 20990,
     "cacheWrite": 0,
     "estimatedCostUsd": 0,
-    "totalTokens": 72076,
+    "totalTokens": 93477,
     "totalTokensFresh": true,
     "lastTo": "telegram:5889732065",
     "lastAccountId": "default",
     "channel": "telegram",
-    "endedAt": 1775101657962,
-    "runtimeMs": 18514
+    "endedAt": 1775110912423,
+    "runtimeMs": 56203
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
