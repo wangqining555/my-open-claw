@@ -42,7 +42,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775005445712,
+      "updatedAtMs": 1775091826478,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -61,15 +61,14 @@
         "to": "user:5889732065"
       },
       "state": {
-        "nextRunAtMs": 1775091600000,
-        "lastRunAtMs": 1775005200006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 245706,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1775091600002
+        "nextRunAtMs": 1775178000000,
+        "lastRunAtMs": 1775091600006,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 226472,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/telegram-CwYV1aFY.js' imported from /usr/lib/node_modules/openclaw/dist/auth-profiles-B5ypC5S-.js"
       }
     }
   ]
