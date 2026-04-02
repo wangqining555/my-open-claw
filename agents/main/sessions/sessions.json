@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
-    "updatedAt": 1775110912463,
+    "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
+    "updatedAt": 1775127098872,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -9,24 +9,18 @@
     "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "telegram",
-      "to": "telegram:5889732065",
-      "accountId": "default"
+      "channel": "webchat"
     },
-    "lastChannel": "telegram",
+    "lastChannel": "webchat",
     "origin": {
       "provider": "webchat",
       "surface": "webchat",
-      "chatType": "direct",
-      "label": "What Oh (@oontme) id:5889732065",
-      "from": "telegram:5889732065",
-      "to": "telegram:5889732065",
-      "accountId": "default"
+      "chatType": "direct"
     },
-    "sessionFile": "/root/.openclaw/agents/main/sessions/f1629a6b-6915-46a4-bbc6-bd9855afe11a.jsonl",
+    "sessionFile": "/root/.openclaw/agents/main/sessions/2c7db72c-ba72-415a-b1a4-14d087a5af59.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bizveris-official</name>\n    <description>中国企业数据查询。支持企业信息查询（工商、股东、风险、知识产权等）和企业筛选（地区、产业链、新成立、招投标等）。输入企业简称时先模糊搜索。需要 BIZVERIS_API_KEY。</description>\n    <location>~/.openclaw/skills/bizveris-official/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>elite-longterm-memory</name>\n    <description>Ultimate AI agent memory system. Combines bulletproof WAL protocol, vector search, git-based knowledge graphs, cloud backup, and maintenance hygiene. Never lose context again. For Clawdbot, Moltbot, Claude, GPT agents.</description>\n    <location>~/.openclaw/skills/elite-longterm-memory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>~/.openclaw/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qveris-assistant</name>\n    <description>For any task where external data or APIs could help, use QVeris to search for and execute tools to retrieve real-time information for the user. Covers weather, stocks, search, currency, data retrieval, and thousands more.</description>\n    <location>~/.openclaw/skills/qveris-assistant/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qveris-coding</name>\n    <description>When coding a project that needs external APIs or tools, use QVeris to discover, verify, and generate production code that calls those APIs. Covers weather, stocks, search, currency, data retrieval, and thousands more.</description>\n    <location>~/.openclaw/skills/qveris-coding/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/skills/skill-vetter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>imap-smtp-email</name>\n    <description>Read and send email via IMAP/SMTP. Check for new/unread messages, fetch content, search mailboxes, mark as read/unread, and send emails with attachments. Works with any IMAP/SMTP server including Gmail, Outlook, 163.com, vip.163.com, 126.com, vip.126.com, 188.com, and vip.188.com.</description>\n    <location>~/.openclaw/workspace/skills/imap-smtp-email/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/clawflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawflow-inbox-triage</name>\n    <description>Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bizveris-official</name>\n    <description>中国企业数据查询。支持企业信息查询（工商、股东、风险、知识产权等）和企业筛选（地区、产业链、新成立、招投标等）。输入企业简称时先模糊搜索。需要 BIZVERIS_API_KEY。</description>\n    <location>~/.openclaw/skills/bizveris-official/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>elite-longterm-memory</name>\n    <description>Ultimate AI agent memory system. Combines bulletproof WAL protocol, vector search, git-based knowledge graphs, cloud backup, and maintenance hygiene. Never lose context again. For Clawdbot, Moltbot, Claude, GPT agents.</description>\n    <location>~/.openclaw/skills/elite-longterm-memory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>~/.openclaw/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qveris-assistant</name>\n    <description>For any task where external data or APIs could help, use QVeris to search for and execute tools to retrieve real-time information for the user. Covers weather, stocks, search, currency, data retrieval, and thousands more.</description>\n    <location>~/.openclaw/skills/qveris-assistant/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qveris-coding</name>\n    <description>When coding a project that needs external APIs or tools, use QVeris to discover, verify, and generate production code that calls those APIs. Covers weather, stocks, search, currency, data retrieval, and thousands more.</description>\n    <location>~/.openclaw/skills/qveris-coding/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/skills/skill-vetter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>imap-smtp-email</name>\n    <description>Read and send email via IMAP/SMTP. Check for new/unread messages, fetch content, search mailboxes, mark as read/unread, and send emails with attachments. Works with any IMAP/SMTP server including Gmail, Outlook, 163.com, vip.163.com, 126.com, vip.126.com, 188.com, and vip.188.com.</description>\n    <location>~/.openclaw/workspace/skills/imap-smtp-email/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "feishu-doc"
@@ -39,6 +33,12 @@
         },
         {
           "name": "feishu-wiki"
+        },
+        {
+          "name": "clawflow"
+        },
+        {
+          "name": "clawflow-inbox-triage"
         },
         {
           "name": "clawhub",
@@ -101,13 +101,14 @@
       "resolvedSkills": [
         {
           "name": "feishu-doc",
-          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n",
+          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.",
           "filePath": "/root/.openclaw/extensions/feishu/skills/feishu-doc/SKILL.md",
           "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-doc",
+          "source": "openclaw-extra",
           "sourceInfo": {
             "path": "/root/.openclaw/extensions/feishu/skills/feishu-doc/SKILL.md",
             "source": "openclaw-extra",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-doc"
           },
@@ -115,13 +116,14 @@
         },
         {
           "name": "feishu-drive",
-          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n",
+          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.",
           "filePath": "/root/.openclaw/extensions/feishu/skills/feishu-drive/SKILL.md",
           "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-drive",
+          "source": "openclaw-extra",
           "sourceInfo": {
             "path": "/root/.openclaw/extensions/feishu/skills/feishu-drive/SKILL.md",
             "source": "openclaw-extra",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-drive"
           },
@@ -129,13 +131,14 @@
         },
         {
           "name": "feishu-perm",
-          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n",
+          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.",
           "filePath": "/root/.openclaw/extensions/feishu/skills/feishu-perm/SKILL.md",
           "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-perm",
+          "source": "openclaw-extra",
           "sourceInfo": {
             "path": "/root/.openclaw/extensions/feishu/skills/feishu-perm/SKILL.md",
             "source": "openclaw-extra",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-perm"
           },
@@ -143,15 +146,46 @@
         },
         {
           "name": "feishu-wiki",
-          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n",
+          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.",
           "filePath": "/root/.openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md",
           "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-wiki",
+          "source": "openclaw-extra",
           "sourceInfo": {
             "path": "/root/.openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md",
             "source": "openclaw-extra",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/extensions/feishu/skills/feishu-wiki"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawflow",
+          "description": "Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/clawflow/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/clawflow",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/usr/lib/node_modules/openclaw/skills/clawflow/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/usr/lib/node_modules/openclaw/skills/clawflow"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawflow-inbox-triage",
+          "description": "Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/clawflow-inbox-triage",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/usr/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/usr/lib/node_modules/openclaw/skills/clawflow-inbox-triage"
           },
           "disableModelInvocation": false
         },
@@ -160,10 +194,11 @@
           "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/clawhub"
           },
@@ -174,10 +209,11 @@
           "description": "Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/coding-agent"
           },
@@ -188,10 +224,11 @@
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
           "filePath": "/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/healthcheck"
           },
@@ -202,10 +239,11 @@
           "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/mcporter",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/mcporter"
           },
@@ -216,10 +254,11 @@
           "description": "Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/node-connect",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/node-connect"
           },
@@ -230,10 +269,11 @@
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
           "filePath": "/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/skill-creator"
           },
@@ -244,10 +284,11 @@
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/weather/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
           "sourceInfo": {
             "path": "/usr/lib/node_modules/openclaw/skills/weather/SKILL.md",
             "source": "openclaw-bundled",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/usr/lib/node_modules/openclaw/skills/weather"
           },
@@ -258,10 +299,11 @@
           "description": "中国企业数据查询。支持企业信息查询（工商、股东、风险、知识产权等）和企业筛选（地区、产业链、新成立、招投标等）。输入企业简称时先模糊搜索。需要 BIZVERIS_API_KEY。",
           "filePath": "/root/.openclaw/skills/bizveris-official/SKILL.md",
           "baseDir": "/root/.openclaw/skills/bizveris-official",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/bizveris-official/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/bizveris-official"
           },
@@ -272,10 +314,11 @@
           "description": "Ultimate AI agent memory system. Combines bulletproof WAL protocol, vector search, git-based knowledge graphs, cloud backup, and maintenance hygiene. Never lose context again. For Clawdbot, Moltbot, Claude, GPT agents.",
           "filePath": "/root/.openclaw/skills/elite-longterm-memory/SKILL.md",
           "baseDir": "/root/.openclaw/skills/elite-longterm-memory",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/elite-longterm-memory/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/elite-longterm-memory"
           },
@@ -286,10 +329,11 @@
           "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
           "filePath": "/root/.openclaw/skills/find-skills/SKILL.md",
           "baseDir": "/root/.openclaw/skills/find-skills",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/find-skills/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/find-skills"
           },
@@ -300,10 +344,11 @@
           "description": "For any task where external data or APIs could help, use QVeris to search for and execute tools to retrieve real-time information for the user. Covers weather, stocks, search, currency, data retrieval, and thousands more.",
           "filePath": "/root/.openclaw/skills/qveris-assistant/SKILL.md",
           "baseDir": "/root/.openclaw/skills/qveris-assistant",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/qveris-assistant/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/qveris-assistant"
           },
@@ -314,10 +359,11 @@
           "description": "When coding a project that needs external APIs or tools, use QVeris to discover, verify, and generate production code that calls those APIs. Covers weather, stocks, search, currency, data retrieval, and thousands more.",
           "filePath": "/root/.openclaw/skills/qveris-coding/SKILL.md",
           "baseDir": "/root/.openclaw/skills/qveris-coding",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/qveris-coding/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/qveris-coding"
           },
@@ -328,10 +374,11 @@
           "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
           "filePath": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
           "baseDir": "/root/.openclaw/skills/self-improving-agent",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/self-improving-agent"
           },
@@ -342,10 +389,11 @@
           "description": "Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.",
           "filePath": "/root/.openclaw/skills/skill-vetter/SKILL.md",
           "baseDir": "/root/.openclaw/skills/skill-vetter",
+          "source": "openclaw-managed",
           "sourceInfo": {
             "path": "/root/.openclaw/skills/skill-vetter/SKILL.md",
             "source": "openclaw-managed",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/skills/skill-vetter"
           },
@@ -356,10 +404,11 @@
           "description": "Read and send email via IMAP/SMTP. Check for new/unread messages, fetch content, search mailboxes, mark as read/unread, and send emails with attachments. Works with any IMAP/SMTP server including Gmail, Outlook, 163.com, vip.163.com, 126.com, vip.126.com, 188.com, and vip.188.com.",
           "filePath": "/root/.openclaw/workspace/skills/imap-smtp-email/SKILL.md",
           "baseDir": "/root/.openclaw/workspace/skills/imap-smtp-email",
+          "source": "openclaw-workspace",
           "sourceInfo": {
             "path": "/root/.openclaw/workspace/skills/imap-smtp-email/SKILL.md",
             "source": "openclaw-workspace",
-            "scope": "temporary",
+            "scope": "project",
             "origin": "top-level",
             "baseDir": "/root/.openclaw/workspace/skills/imap-smtp-email"
           },
@@ -369,14 +418,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775110856220,
+    "startedAt": 1775127089421,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
-    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775110856157,
-      "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
+      "generatedAt": 1775127089390,
+      "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.7",
@@ -395,9 +443,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 34170,
-        "projectContextChars": 11495,
-        "nonProjectContextChars": 22675
+        "chars": 35100,
+        "projectContextChars": 11539,
+        "nonProjectContextChars": 23561
       },
       "injectedWorkspaceFiles": [
         {
@@ -460,29 +508,37 @@
           "name": "MEMORY.md",
           "path": "/root/.openclaw/workspace/MEMORY.md",
           "missing": false,
-          "rawChars": 486,
-          "injectedChars": 486,
+          "rawChars": 530,
+          "injectedChars": 530,
           "truncated": false
         }
       ],
       "skills": {
-        "promptChars": 8477,
+        "promptChars": 9363,
         "entries": [
           {
             "name": "feishu-doc",
-            "blockChars": 267
+            "blockChars": 266
           },
           {
             "name": "feishu-drive",
-            "blockChars": 259
+            "blockChars": 258
           },
           {
             "name": "feishu-perm",
-            "blockChars": 281
+            "blockChars": 280
           },
           {
             "name": "feishu-wiki",
-            "blockChars": 261
+            "blockChars": 260
+          },
+          {
+            "name": "clawflow",
+            "blockChars": 475
+          },
+          {
+            "name": "clawflow-inbox-triage",
+            "blockChars": 409
           },
           {
             "name": "clawhub",
@@ -793,18 +849,16 @@
         ]
       }
     },
-    "inputTokens": 215521,
-    "outputTokens": 946,
-    "cacheRead": 20990,
+    "cacheRead": 21220,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0,
-    "totalTokens": 93477,
     "totalTokensFresh": true,
-    "lastTo": "telegram:5889732065",
-    "lastAccountId": "default",
-    "channel": "telegram",
-    "endedAt": 1775110912423,
-    "runtimeMs": 56203
+    "endedAt": 1775127098838,
+    "runtimeMs": 9417,
+    "contextTokens": 200000,
+    "inputTokens": 1264,
+    "outputTokens": 235,
+    "estimatedCostUsd": 0,
+    "totalTokens": 22384
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
