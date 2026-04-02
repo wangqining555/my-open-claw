@@ -6,7 +6,7 @@
       "name": "每日股市学习内容",
       "enabled": true,
       "createdAtMs": 1773157637215,
-      "updatedAtMs": 1775001893658,
+      "updatedAtMs": 1775088168739,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -25,15 +25,14 @@
         "to": "user:5889732065"
       },
       "state": {
-        "nextRunAtMs": 1775088000000,
-        "lastRunAtMs": 1775001600008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 293650,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1775088000001
+        "nextRunAtMs": 1775174400000,
+        "lastRunAtMs": 1775088000005,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 168734,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/telegram-CwYV1aFY.js' imported from /usr/lib/node_modules/openclaw/dist/auth-profiles-B5ypC5S-.js"
       }
     },
     {
@@ -69,7 +68,8 @@
         "lastDurationMs": 245706,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1775091600002
       }
     }
   ]
