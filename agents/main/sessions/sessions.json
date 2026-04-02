@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
-    "updatedAt": 1775096492892,
+    "updatedAt": 1775101657995,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -18,7 +18,7 @@
       "provider": "telegram",
       "surface": "telegram",
       "chatType": "direct",
-      "label": "telegram:5889732065",
+      "label": "What Oh (@oontme) id:5889732065",
       "from": "telegram:5889732065",
       "to": "telegram:5889732065",
       "accountId": "default"
@@ -369,13 +369,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775096454377,
+    "startedAt": 1775101639448,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775096454336,
+      "generatedAt": 1775101639387,
       "sessionId": "f1629a6b-6915-46a4-bbc6-bd9855afe11a",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -769,18 +769,18 @@
         ]
       }
     },
-    "inputTokens": 83894,
-    "outputTokens": 1576,
+    "inputTokens": 105975,
+    "outputTokens": 363,
     "cacheRead": 19063,
     "cacheWrite": 0,
     "estimatedCostUsd": 0,
-    "totalTokens": 61400,
+    "totalTokens": 72076,
     "totalTokensFresh": true,
     "lastTo": "telegram:5889732065",
     "lastAccountId": "default",
     "channel": "telegram",
-    "endedAt": 1775096492866,
-    "runtimeMs": 38489
+    "endedAt": 1775101657962,
+    "runtimeMs": 18514
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
