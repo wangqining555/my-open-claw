@@ -8,7 +8,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775187848361,
+      "updatedAtMs": 1775195395502,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -22,20 +22,20 @@
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "none",
+        "mode": "announce",
         "channel": "telegram",
         "to": "5889732065",
         "bestEffort": true
       },
       "state": {
         "nextRunAtMs": 1775264400000,
-        "lastRunAtMs": 1775187304650,
+        "lastRunAtMs": 1775195316867,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 79398,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 78635,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": false
       },
       "failureAlert": {
         "after": 1,
