@@ -6,7 +6,7 @@
       "name": "每日股市学习内容",
       "enabled": true,
       "createdAtMs": 1773157637215,
-      "updatedAtMs": 1775088168739,
+      "updatedAtMs": 1775174466112,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -25,14 +25,14 @@
         "to": "user:5889732065"
       },
       "state": {
-        "nextRunAtMs": 1775174400000,
-        "lastRunAtMs": 1775088000005,
+        "nextRunAtMs": 1775260800000,
+        "lastRunAtMs": 1775174400006,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 168734,
+        "lastDurationMs": 66106,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "runningAtMs": 1775174400002
+        "consecutiveErrors": 2,
+        "lastError": "Error: Telegram recipient must be a numeric chat ID"
       }
     },
     {
@@ -68,7 +68,7 @@
         "lastDurationMs": 226472,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1,
-        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/telegram-CwYV1aFY.js' imported from /usr/lib/node_modules/openclaw/dist/auth-profiles-B5ypC5S-.js"
+        "runningAtMs": 1775178000002
       }
     }
   ]
