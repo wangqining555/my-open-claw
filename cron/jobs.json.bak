@@ -2,47 +2,13 @@
   "version": 1,
   "jobs": [
     {
-      "id": "06fbf0a9-c6ea-4595-9520-d7d4200f2319",
-      "name": "每日股市学习内容",
-      "enabled": true,
-      "createdAtMs": 1773157637215,
-      "updatedAtMs": 1774224185118,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "Asia/Shanghai"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "按以下步骤完成每日股市学习内容：\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天\n2. 用mcporter搜索当天学习主题的相关知识\n3. 创建新的飞书文档（用feishu_doc create，标题为\"第X天：XXX\"）\n4. 用feishu_doc write一次性写入完整内容（内容要至少800字，包含：1.计划当天内容的展开讲解 2.相关导读跳转链接 3.股市实际应用中的故事）\n5. 重要：用feishu_doc read读取刚创建的文档，检查block_count是否大于5，如果block_count<=5说明文档为空，立即用feishu_doc write重新写入内容\n6. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "feishu",
-        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
-      },
-      "state": {
-        "nextRunAtMs": 1774310400000,
-        "lastRunAtMs": 1774224000008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 185110,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
-    },
-    {
       "id": "b28d5855-b05f-4636-8ea5-b8397d8269df",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1774141270510,
+      "updatedAtMs": 1775187848361,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -52,25 +18,33 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请完成以下任务：\n1. 用mcporter搜索今天最新的AI领域新闻（搜索\"AI 人工智能 新闻 2026年3月\"，count=10）\n2. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n3. 整理成一份简洁有条理的摘要，格式像你平时给老大汇报那样，包含：\n   - 🤖 AI领域大新闻（大厂动态、技术趋势等）\n   - 🦞 OpenClaw最新花活\n4. 通过feishu消息发送给老大（飞书ID: ou_de2d9ef449a48a06d00301c76aa9448d）\n5. 重要：消息要有人工整理的感觉，不是简单罗列标题，要有分析和总结",
+        "message": "请完成以下任务：\n\n1. 首先调用 session_status 工具获取当前日期\n2. 根据当前日期计算近三天的日期范围（例如今天是2026年4月3日，则近三天为4月1日、2日、3日）\n3. 用mcporter分三次搜索近三天的AI领域新闻：\n   - 搜索\"AI 人工智能 新闻 YYYYMMDD\" count=10（分别针对近三天每天搜一次）\n4. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n5. 整理成一份完整详细的日报，包含：\n   - 🤖 AI领域大新闻（每条要有标题+简介+个人点评）\n   - 🦞 OpenClaw最新花活\n6. 通过 message 工具发送到 Telegram（channel=telegram, to=5889732065）\n7. 重要：消息要有人工整理的感觉，要有分析有观点，不是简单罗列标题，发送后回复 HEARTBEAT_OK",
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
-        "channel": "feishu",
-        "to": "user:ou_de2d9ef449a48a06d00301c76aa9448d"
+        "mode": "none",
+        "channel": "telegram",
+        "to": "5889732065",
+        "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1774227600000,
-        "lastRunAtMs": 1774141200005,
+        "nextRunAtMs": 1775264400000,
+        "lastRunAtMs": 1775187304650,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 70505,
-        "lastDelivered": true,
+        "lastDurationMs": 79398,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774227600003
-      }
+        "lastDelivered": true
+      },
+      "failureAlert": {
+        "after": 1,
+        "channel": "telegram",
+        "to": "5889732065",
+        "cooldownMs": 3600000,
+        "mode": "announce"
+      },
+      "deleteAfterRun": false
     }
   ]
 }

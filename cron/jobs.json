@@ -2,47 +2,13 @@
   "version": 1,
   "jobs": [
     {
-      "id": "06fbf0a9-c6ea-4595-9520-d7d4200f2319",
-      "name": "每日股市学习内容",
-      "enabled": true,
-      "createdAtMs": 1773157637215,
-      "updatedAtMs": 1775174466112,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "Asia/Shanghai"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "按以下步骤完成每日股市学习内容：\n1. 读取飞书文档《30天炒股学习计划》(SRJ8dMyVuoa4T9xQKqxc8HXSnch)，确定当天是第几天和学习主题\n2. 用mcporter搜索当天学习主题的相关知识（可以搜索多个角度）\n3. 创建新的飞书文档（用feishu_doc create，标题为\"第X天：XXX\"）\n4. 用feishu_doc write一次性写入完整内容，要求：\n   - 📖 阅读时间10-30分钟的长文\n   - 📊 图文并茂：由简入繁，能用表格/对比/结构化表达的就不用大段文字\n   - 📚 有理有据：展开讲透每个知识点，给出数据/案例/故事\n   - 内容必须包含：\n     ① 1-2个真实股市故事/案例开篇\n     ② 概念解释（简单到复杂）\n     ③ 核心知识点展开（至少3个维度的详细讲解）\n     ④ 具体操作方案/配置建议\n     ⑤ 常见误区/避坑指南\n     ⑥ 今日学习任务（3个具体可执行的检查项）\n   - 5. 重要：用feishu_doc read读取刚创建的文档，检查block_count是否大于10，如果block_count<=10说明内容太短，立即用feishu_doc write重新写入更详细的内容\n   - 6. 把文档链接通过feishu发送给老大(ou_de2d9ef449a48a06d00301c76aa9448d)",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "user:5889732065"
-      },
-      "state": {
-        "nextRunAtMs": 1775260800000,
-        "lastRunAtMs": 1775174400006,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 66106,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "Error: Telegram recipient must be a numeric chat ID"
-      }
-    },
-    {
       "id": "b28d5855-b05f-4636-8ea5-b8397d8269df",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775178061268,
+      "updatedAtMs": 1775187864446,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -52,24 +18,33 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请完成以下任务：\n1. 用mcporter搜索今天最新的AI领域新闻（搜索\"AI 人工智能 新闻 2026年3月\"，count=10）\n2. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n3. 整理成一份简洁有条理的摘要，格式像你平时给老大汇报那样，包含：\n   - 🤖 AI领域大新闻（大厂动态、技术趋势等）\n   - 🦞 OpenClaw最新花活\n4. 通过feishu消息发送给老大（飞书ID: ou_de2d9ef449a48a06d00301c76aa9448d）\n5. 重要：消息要有人工整理的感觉，不是简单罗列标题，要有分析和总结",
+        "message": "请完成以下任务：\n\n1. 首先调用 session_status 工具获取当前日期\n2. 根据当前日期计算近三天的日期范围（例如今天是2026年4月3日，则近三天为4月1日、2日、3日）\n3. 用mcporter分三次搜索近三天的AI领域新闻：\n   - 搜索\"AI 人工智能 新闻 YYYYMMDD\" count=10（分别针对近三天每天搜一次）\n4. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n5. 整理成一份完整详细的日报，包含：\n   - 🤖 AI领域大新闻（每条要有标题+简介+个人点评）\n   - 🦞 OpenClaw最新花活\n6. 通过 message 工具发送到 Telegram（channel=telegram, to=5889732065）\n7. 重要：消息要有人工整理的感觉，要有分析有观点，不是简单罗列标题，发送后回复 HEARTBEAT_OK",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce",
         "channel": "telegram",
-        "to": "user:5889732065"
+        "to": "5889732065",
+        "bestEffort": true
       },
       "state": {
         "nextRunAtMs": 1775264400000,
-        "lastRunAtMs": 1775178000006,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 61262,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "Error: Telegram recipient must be a numeric chat ID"
-      }
+        "lastRunAtMs": 1775187304650,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 79398,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      },
+      "failureAlert": {
+        "after": 1,
+        "channel": "telegram",
+        "to": "5889732065",
+        "cooldownMs": 3600000,
+        "mode": "announce"
+      },
+      "deleteAfterRun": false
     }
   ]
 }
