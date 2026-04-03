@@ -32,7 +32,7 @@
         "lastDurationMs": 168734,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1,
-        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/telegram-CwYV1aFY.js' imported from /usr/lib/node_modules/openclaw/dist/auth-profiles-B5ypC5S-.js"
+        "runningAtMs": 1775174400002
       }
     },
     {
