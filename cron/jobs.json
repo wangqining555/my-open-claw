@@ -42,7 +42,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775091826478,
+      "updatedAtMs": 1775178061268,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -61,14 +61,14 @@
         "to": "user:5889732065"
       },
       "state": {
-        "nextRunAtMs": 1775178000000,
-        "lastRunAtMs": 1775091600006,
+        "nextRunAtMs": 1775264400000,
+        "lastRunAtMs": 1775178000006,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 226472,
+        "lastDurationMs": 61262,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "runningAtMs": 1775178000002
+        "consecutiveErrors": 2,
+        "lastError": "Error: Telegram recipient must be a numeric chat ID"
       }
     }
   ]
