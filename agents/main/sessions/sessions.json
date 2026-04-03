@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
-    "updatedAt": 1775127098872,
+    "updatedAt": 1775183658382,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -9,13 +9,17 @@
     "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "lastChannel": "webchat",
     "origin": {
-      "provider": "webchat",
+      "provider": "heartbeat",
       "surface": "webchat",
-      "chatType": "direct"
+      "chatType": "direct",
+      "label": "heartbeat",
+      "from": "heartbeat",
+      "to": "heartbeat"
     },
     "sessionFile": "/root/.openclaw/agents/main/sessions/2c7db72c-ba72-415a-b1a4-14d087a5af59.jsonl",
     "compactionCount": 0,
@@ -418,12 +422,12 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775127089421,
+    "startedAt": 1775183644795,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775127089390,
+      "generatedAt": 1775183644708,
       "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -443,9 +447,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 35100,
+        "chars": 33196,
         "projectContextChars": 11539,
-        "nonProjectContextChars": 23561
+        "nonProjectContextChars": 21657
       },
       "injectedWorkspaceFiles": [
         {
@@ -603,8 +607,8 @@
         ]
       },
       "tools": {
-        "listChars": 4212,
-        "schemaChars": 30380,
+        "listChars": 3659,
+        "schemaChars": 28803,
         "entries": [
           {
             "name": "read",
@@ -637,34 +641,16 @@
             "propertiesCount": 12
           },
           {
-            "name": "whatsapp_login",
-            "summaryChars": 74,
-            "schemaChars": 162,
-            "propertiesCount": 3
-          },
-          {
             "name": "canvas",
             "summaryChars": 106,
             "schemaChars": 661,
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 118,
-            "schemaChars": 1589,
-            "propertiesCount": 32
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3570,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
             "summaryChars": 237,
-            "schemaChars": 5779,
-            "propertiesCount": 107
+            "schemaChars": 7064,
+            "propertiesCount": 110
           },
           {
             "name": "tts",
@@ -677,12 +663,6 @@
             "summaryChars": 435,
             "schemaChars": 1195,
             "propertiesCount": 10
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -783,7 +763,7 @@
           {
             "name": "feishu_drive",
             "summaryChars": 146,
-            "schemaChars": 1018,
+            "schemaChars": 1094,
             "propertiesCount": 11
           },
           {
@@ -849,16 +829,17 @@
         ]
       }
     },
-    "cacheRead": 21220,
+    "cacheRead": 19088,
     "cacheWrite": 0,
     "totalTokensFresh": true,
-    "endedAt": 1775127098838,
-    "runtimeMs": 9417,
     "contextTokens": 200000,
-    "inputTokens": 1264,
-    "outputTokens": 235,
+    "inputTokens": 1504,
+    "outputTokens": 98,
     "estimatedCostUsd": 0,
-    "totalTokens": 22384
+    "totalTokens": 20502,
+    "lastTo": "heartbeat",
+    "endedAt": 1775183652638,
+    "runtimeMs": 7843
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
