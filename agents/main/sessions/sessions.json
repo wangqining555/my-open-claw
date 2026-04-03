@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
-    "updatedAt": 1775205564838,
+    "updatedAt": 1775207375333,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax-portal:default",
@@ -424,12 +424,12 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775205554156,
+    "startedAt": 1775207333917,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775205554085,
+      "generatedAt": 1775207333843,
       "sessionId": "2c7db72c-ba72-415a-b1a4-14d087a5af59",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
@@ -831,18 +831,18 @@
         ]
       }
     },
-    "cacheRead": 71512,
-    "cacheWrite": 7265,
+    "cacheRead": 19209,
+    "cacheWrite": 0,
     "totalTokensFresh": true,
     "contextTokens": 200000,
-    "inputTokens": 90,
-    "outputTokens": 72,
+    "inputTokens": 68193,
+    "outputTokens": 902,
     "estimatedCostUsd": 0,
-    "totalTokens": 78867,
+    "totalTokens": 87312,
     "lastTo": "telegram:5889732065",
     "lastAccountId": "default",
-    "endedAt": 1775205564790,
-    "runtimeMs": 10634
+    "endedAt": 1775207375286,
+    "runtimeMs": 41369
   },
   "agent:main:cron:31240d42-43aa-4b12-8a55-cdada12782a9": {
     "sessionId": "2ef62295-5656-46e6-ad9c-050866cb0e31",
