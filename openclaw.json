@@ -56,6 +56,7 @@
       },
       "thinkingDefault": "high",
       "maxConcurrent": 4,
+      "timeoutSeconds": 600,
       "subagents": {
         "maxConcurrent": 8
       }

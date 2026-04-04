@@ -8,7 +8,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775195395502,
+      "updatedAtMs": 1775317466127,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请完成以下任务：\n\n1. 首先调用 session_status 工具获取当前日期\n2. 根据当前日期计算近三天的日期范围（例如今天是2026年4月3日，则近三天为4月1日、2日、3日）\n3. 用mcporter分三次搜索近三天的AI领域新闻：\n   - 搜索\"AI 人工智能 新闻 YYYYMMDD\" count=10（分别针对近三天每天搜一次）\n4. 用mcporter搜索OpenClaw最新动态（搜索\"OpenClaw AI agent 更新 2026\"，count=10）\n5. 整理成一份完整详细的日报，包含：\n   - 🤖 AI领域大新闻（每条要有标题+简介+个人点评）\n   - 🦞 OpenClaw最新花活\n6. 通过 message 工具发送到 Telegram（channel=telegram, to=5889732065）\n7. 重要：消息要有人工整理的感觉，要有分析有观点，不是简单罗列标题，发送后回复 HEARTBEAT_OK",
+        "message": "请完成以下任务：\n\n1. 首先调用 session_status 工具获取当前日期\n2. 根据当前日期计算近三天的日期范围（例如今天是2026年4月3日，则近三天为4月1日、2日、3日）\n3. 用mcporter分三次搜索近三天的AI领域新闻：\n   - 搜索\"AI 人工智能 新闻 YYYYMMDD\" count=10（分别针对近三天每天搜一次）\n4. 用mcporter搜索\"OpenClaw 龙虾 变现 案例\" count=10\n5. 用mcporter搜索\"OpenClaw AI agent 趣味应用 赚钱\" count=10\n6. 整理成一份完整详细的日报，包含：\n   - 🤖 AI领域大新闻（每条要有标题+简介+个人点评）\n   - 🦞 OpenClaw玩家实操：重点搜集网友用OpenClaw实现了什么有趣的功能、赚了多少钱、怎么变现的，不要写版本更新，要写具体的人和事\n7. 通过 message 工具发送到 Telegram（channel=telegram, to=5889732065）\n8. 重要：消息要有人工整理的感觉，要有分析有观点，发送后回复 HEARTBEAT_OK",
         "timeoutSeconds": 300
       },
       "delivery": {
@@ -28,14 +28,16 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1775264400000,
-        "lastRunAtMs": 1775195316867,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 78635,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
+        "nextRunAtMs": 1775350800000,
+        "lastRunAtMs": 1775264400004,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 69470,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastDelivered": true,
+        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+        "lastErrorReason": "timeout"
       },
       "failureAlert": {
         "after": 1,
