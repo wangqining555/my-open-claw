@@ -1784,8 +1784,8 @@
     "estimatedCostUsd": 0
   },
   "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df": {
-    "sessionId": "497a7c26-ff5e-4878-b4dd-9f1fa21210dd",
-    "updatedAt": 1775264400013,
+    "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
+    "updatedAt": 1775350800019,
     "systemSent": true,
     "label": "Cron: 每日AI资讯播报",
     "skillsSnapshot": {
@@ -2024,8 +2024,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775264408368,
-      "sessionId": "497a7c26-ff5e-4878-b4dd-9f1fa21210dd",
+      "generatedAt": 1775350811766,
+      "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.7",
@@ -2419,20 +2419,20 @@
       }
     },
     "contextTokens": 200000,
-    "inputTokens": 80316,
-    "outputTokens": 5623,
-    "totalTokens": 43898,
+    "inputTokens": 100,
+    "outputTokens": 394,
+    "totalTokens": 22164,
     "totalTokensFresh": true,
-    "cacheRead": 86800,
+    "cacheRead": 0,
     "cacheWrite": 22064,
     "status": "running",
     "startedAt": 1774486800851,
     "abortedLastRun": false,
     "estimatedCostUsd": 0
   },
-  "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df:run:497a7c26-ff5e-4878-b4dd-9f1fa21210dd": {
-    "sessionId": "497a7c26-ff5e-4878-b4dd-9f1fa21210dd",
-    "updatedAt": 1775264400013,
+  "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df:run:5073643b-3c2a-4d1b-ae40-497e44882d9c": {
+    "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
+    "updatedAt": 1775350800019,
     "systemSent": true,
     "label": "Cron: 每日AI资讯播报",
     "skillsSnapshot": {
@@ -2671,8 +2671,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775264408368,
-      "sessionId": "497a7c26-ff5e-4878-b4dd-9f1fa21210dd",
+      "generatedAt": 1775350811766,
+      "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.7",
@@ -3066,11 +3066,11 @@
       }
     },
     "contextTokens": 200000,
-    "inputTokens": 80316,
-    "outputTokens": 5623,
-    "totalTokens": 43898,
+    "inputTokens": 100,
+    "outputTokens": 394,
+    "totalTokens": 22164,
     "totalTokensFresh": true,
-    "cacheRead": 86800,
+    "cacheRead": 0,
     "cacheWrite": 22064,
     "status": "running",
     "startedAt": 1774486800851,

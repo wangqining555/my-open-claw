@@ -8,7 +8,7 @@
       "name": "每日AI资讯播报",
       "enabled": true,
       "createdAtMs": 1773993745292,
-      "updatedAtMs": 1775317477820,
+      "updatedAtMs": 1775350888966,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -28,16 +28,16 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1775350800000,
-        "lastRunAtMs": 1775264400004,
+        "nextRunAtMs": 1775437200000,
+        "lastRunAtMs": 1775350800007,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 69470,
+        "lastDurationMs": 88959,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
+        "consecutiveErrors": 2,
         "lastDelivered": true,
         "lastErrorReason": "timeout",
-        "runningAtMs": 1775350800002
+        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
       },
       "failureAlert": {
         "after": 1,
