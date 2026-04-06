@@ -1782,8 +1782,8 @@
     "estimatedCostUsd": 0
   },
   "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df": {
-    "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
-    "updatedAt": 1775350800019,
+    "sessionId": "2bb49f7c-b587-4fd3-a8e7-1729c92d82b4",
+    "updatedAt": 1775437200030,
     "systemSent": true,
     "label": "Cron: 每日AI资讯播报",
     "skillsSnapshot": {
@@ -2022,8 +2022,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775350811766,
-      "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
+      "generatedAt": 1775437206815,
+      "sessionId": "2bb49f7c-b587-4fd3-a8e7-1729c92d82b4",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.7",
@@ -2418,7 +2418,7 @@
     },
     "contextTokens": 200000,
     "inputTokens": 100,
-    "outputTokens": 394,
+    "outputTokens": 406,
     "totalTokens": 22164,
     "totalTokensFresh": true,
     "cacheRead": 0,
@@ -2428,9 +2428,9 @@
     "abortedLastRun": false,
     "estimatedCostUsd": 0
   },
-  "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df:run:5073643b-3c2a-4d1b-ae40-497e44882d9c": {
-    "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
-    "updatedAt": 1775350800019,
+  "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df:run:2bb49f7c-b587-4fd3-a8e7-1729c92d82b4": {
+    "sessionId": "2bb49f7c-b587-4fd3-a8e7-1729c92d82b4",
+    "updatedAt": 1775437200030,
     "systemSent": true,
     "label": "Cron: 每日AI资讯播报",
     "skillsSnapshot": {
@@ -2669,8 +2669,8 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775350811766,
-      "sessionId": "5073643b-3c2a-4d1b-ae40-497e44882d9c",
+      "generatedAt": 1775437206815,
+      "sessionId": "2bb49f7c-b587-4fd3-a8e7-1729c92d82b4",
       "sessionKey": "agent:main:cron:b28d5855-b05f-4636-8ea5-b8397d8269df",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.7",
@@ -3065,7 +3065,7 @@
     },
     "contextTokens": 200000,
     "inputTokens": 100,
-    "outputTokens": 394,
+    "outputTokens": 406,
     "totalTokens": 22164,
     "totalTokensFresh": true,
     "cacheRead": 0,
