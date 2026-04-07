@@ -37,7 +37,7 @@
         "consecutiveErrors": 3,
         "lastDelivered": true,
         "lastErrorReason": "timeout",
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
+        "runningAtMs": 1775523600001
       },
       "failureAlert": {
         "after": 1,
